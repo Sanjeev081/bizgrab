@@ -93,24 +93,24 @@ public class appiumbasics {
     driver.findElement(By.xpath("//*[@text='Password']")).sendKeys("Password");
     Thread.sleep(3000);
     driver.findElement(By.xpath("//*[@text='Login']")).click();
-    Thread.sleep(20000);
-    File file  = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-    FileUtils.copyFile(file, new File("homeScreenshot.jpg"));
-    Thread.sleep(4000);
+    //Thread.sleep(10000);
+//   File file  = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+//    FileUtils.copyFile(file, new File("homeScreenshot.jpg"));
+   // Thread.sleep(4000);
     driver.findElement(By.xpath("//*[@text='Setting']")).click();
-    Thread.sleep(3000);
-    File file1  = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-    FileUtils.copyFile(file1, new File("settingScreenshot.jpg"));
-    
+//    Thread.sleep(3000);
+//    File file1  = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+//    FileUtils.copyFile(file1, new File("settingScreenshot.jpg"));
+//    
     driver.findElement(By.xpath("//*[@text='Home']")).click();
        Thread.sleep(3000);
        
        
    driver.findElement(By.xpath("//*[@text='Scan On']")).click();
    Thread.sleep(3000);
-   File file4 = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-   FileUtils.copyFile(file4, new File("searchrunScreenshot.jpg"));
-   Thread.sleep(2000);
+//   File file4 = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+//   FileUtils.copyFile(file4, new File("searchrunScreenshot.jpg"));
+//   Thread.sleep(2000);
 //   File file2  = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 //  FileUtils.copyFile(file2, new File("searchrunScreenshot.jpg"));
 //  driver.findElement(By.className("android.widget.ImageView")).click();
@@ -126,11 +126,11 @@ public class appiumbasics {
 //  driver.findElement(By.xpath("//*[text='PENDING DELIVERY']")).click();
    driver.findElement(By.xpath("//*[@text='Search']")).sendKeys("ref20964");
    driver.findElement(By.xpath("//*[@text='SUMMARY']")).click();
-   Thread.sleep(3000);
-   
-   File file5 = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-   FileUtils.copyFile(file5, new File("runsmmeryScreenshot.jpg"));
-   Thread.sleep(3000);
+//   Thread.sleep(3000);
+//   
+//   File file5 = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+//   FileUtils.copyFile(file5, new File("runsmmeryScreenshot.jpg"));
+//   Thread.sleep(3000);
    driver.navigate().back() ;
    
    //driver.findElement(AppiumBy.className("android.view.ViewGroup")).click();
@@ -139,10 +139,10 @@ public class appiumbasics {
    
    driver.findElement(By.xpath("//*[@text='Processed By: Jaswinder']")).click();
    
-   
- File file6 = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
- FileUtils.copyFile(file6, new File("runScreenshot.jpg"));
- Thread.sleep(3000);
+//   
+// File file6 = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+// FileUtils.copyFile(file6, new File("runScreenshot.jpg"));
+// Thread.sleep(3000);
  
  driver.findElement(By.xpath("//*[@text='PENDING DELIVERY']")).click();
  Thread.sleep(3000);
@@ -153,9 +153,9 @@ public class appiumbasics {
  driver.findElement(By.xpath("//*[@text='Allow']")).click();
  Thread.sleep(3000);
  driver.findElement(By.xpath("//*[@text='Allow']")).click();
- Thread.sleep(3000);
- File file7  = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
- FileUtils.copyFile(file7, new File("InvScreenshot.jpg"));
+// Thread.sleep(3000);
+// File file7  = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+// FileUtils.copyFile(file7, new File("InvScreenshot.jpg"));
  //Thread.sleep(30000);
  //driver.findElement(By.className("android.widget.TextView")).click();
  
