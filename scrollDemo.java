@@ -49,6 +49,10 @@ public class scrollDemo {
  
 
    driver = new RemoteWebDriver(new URL("http://127.0.0.1:4723/wd/hub"), capability);
+   Thread.sleep(3000);
+   File file  = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+ FileUtils.copyFile(file, new File("Screenshot.jpg"));
+ Thread.sleep(5000);
    driver.findElement(AppiumBy.accessibilityId("Views")).click();
 //   driver.findElement(By.xpath("//android.widget.TextView[@content-desc=\"Expandable Lists\"]")).click();
 //   driver.findElement(By.xpath("//android.widget.TextView[@content-desc=\"1. Custom Adapter\"]")).click();

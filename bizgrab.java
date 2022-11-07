@@ -1,21 +1,13 @@
 package sanjeevacademy;
 
 import java.io.File;
-import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.UUID;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.io.FileHandler;
-import org.openqa.selenium.remote.CapabilityType;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
-import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -23,9 +15,7 @@ import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
 
-//adding some comment for git hub
-public class appiumbasics {
-	//WebDriver driver;
+public class bizgrab {
 	AndroidDriver driver;
 	@BeforeClass
 	 public void setUp() throws Exception {
@@ -45,7 +35,7 @@ public class appiumbasics {
 //      Thi is for the Tab
 	 UiAutomator2Options options=new UiAutomator2Options();
 	 options.setDeviceName("Sanjeeviphone");
-	 options.setApp("/Users/bitbyte/Desktop/13.apk");
+	 options.setApp("/Users/bitbyte/Desktop/app-release .apk");
 	 options.setAppActivity("com.bizgrab.MainActivity");
 	 
 	 
@@ -84,11 +74,13 @@ public class appiumbasics {
 //  
 //  driver.findElement(By.id("android:id/edit")).sendKeys("Testing");
 //  driver.findElement(By.id("android:id/button1")).click();
+  
     driver.findElement(AppiumBy.className("android.widget.EditText")).sendKeys("sanjeevk@bitbyteitservices.com");
     Thread.sleep(3000);
-   
-    //driver.findElement(By.xpath("ewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.TextView")).click();
-  
+//   
+//    //driver.findElement(By.xpath("ewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.TextView")).click();
+//  
+
     driver.findElement(By.xpath("//*[@text='Next']")).click();
     Thread.sleep(3000);
     driver.findElement(By.className("android.view.ViewGroup")).click();
@@ -97,28 +89,26 @@ public class appiumbasics {
     Thread.sleep(3000);
     driver.findElement(By.xpath("//*[@text='Login']")).click();
     Thread.sleep(30000);
-//  File file  = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-//   FileUtils.copyFile(file, new File("homeScreenshot.png"));
-//   Thread.sleep(4000);
-    UiAutomator2Options option10 = new UiAutomator2Options();
-    option10.setNativeWebScreenshot(true);
-    screenshot("/Users/bitbyte/Desktop/screenshot/1");
+  File file  = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+   FileUtils.copyFile(file, new File("homeScreenshot.png"));
+  Thread.sleep(4000);
+    
     
     driver.findElement(By.xpath("//*[@text='Setting']")).click();
-//    Thread.sleep(3000);
-//    File file1  = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-//    FileUtils.copyFile(file1, new File("settingScreenshot.jpg"));
+    Thread.sleep(3000);
+    File file1  = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+    FileUtils.copyFile(file1, new File("settingScreenshot.jpg"));
     
-//    
+    
     driver.findElement(By.xpath("//*[@text='Home']")).click();
        Thread.sleep(3000);
        
          
    driver.findElement(By.xpath("//*[@text='Scan On']")).click();
    Thread.sleep(3000);
-//   File file4 = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-//   FileUtils.copyFile(file4, new File("searchrunScreenshot.jpg"));
-//   Thread.sleep(2000);
+   File file4 = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+   FileUtils.copyFile(file4, new File("searchrunScreenshot.jpg"));
+   Thread.sleep(2000);
 //   File file2  = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 //  FileUtils.copyFile(file2, new File("searchrunScreenshot.jpg"));
 //  driver.findElement(By.className("android.widget.ImageView")).click();
@@ -135,22 +125,22 @@ public class appiumbasics {
    driver.findElement(By.xpath("//*[@text='Search']")).sendKeys("ref20911");
    driver.findElement(By.xpath("//*[@text='SUMMARY']")).click();
 //   Thread.sleep(3000);
-//   
-//   File file5 = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-//   FileUtils.copyFile(file5, new File("runsmmeryScreenshot.jpg"));
-//   Thread.sleep(3000);
+   
+   File file5 = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+   FileUtils.copyFile(file5, new File("runsmmeryScreenshot.jpg"));
+   Thread.sleep(3000);
    driver.navigate().back() ;
    
    //driver.findElement(AppiumBy.className("android.view.ViewGroup")).click();
    
    Thread.sleep(3000);
    
-   driver.findElement(By.xpath("//*[@text='Processed By: Jaswinder']")).click();
+   driver.findElement(By.xpath("//*[@text='PARTIALLY SCANNED ON']")).click();
    
 //   
-// File file6 = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-// FileUtils.copyFile(file6, new File("runScreenshot.jpg"));
-// Thread.sleep(3000);
+ File file6 = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+ FileUtils.copyFile(file6, new File("runScreenshot.jpg"));
+ Thread.sleep(3000);
  
  driver.findElement(By.xpath("//*[@text='PENDING DELIVERY']")).click();
  Thread.sleep(3000);
@@ -161,11 +151,18 @@ public class appiumbasics {
  driver.findElement(By.xpath("//*[@text='Allow']")).click();
  Thread.sleep(3000);
  driver.findElement(By.xpath("//*[@text='Allow']")).click();
-// Thread.sleep(3000);
-// File file7  = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-// FileUtils.copyFile(file7, new File("InvScreenshot.jpg"));
- //Thread.sleep(30000);
- //driver.findElement(By.className("android.widget.TextView")).click();
+ Thread.sleep(3000);
+ File file7  = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+ FileUtils.copyFile(file7, new File("InvScreenshot.jpg"));
+ Thread.sleep(30000);
+ driver.findElement(By.className("android.widget.TextView")).click();
+  
+   
+       
+        
+
+
+ 
  
  
    
@@ -174,12 +171,6 @@ public class appiumbasics {
    
      
 	 }
-	public void screenshot(String path_screenshot) throws IOException{
-	    File srcFile=driver.getScreenshotAs(OutputType.FILE);
-	    String filename=UUID.randomUUID().toString(); 
-	    File targetFile=new File(path_screenshot + filename +".jpg");
-	    FileUtils.copyFile(srcFile,targetFile);
-	}
 	
 		   
 		 
@@ -214,7 +205,6 @@ public class appiumbasics {
 		//System.out.println("firstappium TestHelloTest1");
 		
 	}
-	
 	
 	
 	

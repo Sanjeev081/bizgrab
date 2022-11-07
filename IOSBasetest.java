@@ -173,61 +173,61 @@ public class IOSBasetest {
 //   
 //   
 //  
-  DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
-  desiredCapabilities.setCapability("platformName", "iOS");
-  desiredCapabilities.setCapability("platformVersion", "14.5");
-  desiredCapabilities.setCapability("deviceName", "iPhone 12 Pro");
-  desiredCapabilities.setCapability("automationName","XCUITest");
-  //desiredCapabilities.setCapability("appPackage", "");
-  desiredCapabilities.setCapability("app", "/Users/bitbyte/Desktop/BizGrab.app");
-
-  URL url = new URL("http://127.0.0.1:4723/wd/hub");
-
-  //driver = new AppiumDriver(url, desiredCapabilities);
-  //AndroidDriver androidDriver = new AndroidDriver(url, desiredCapabilities);
-  driver = new AppiumDriver(url, desiredCapabilities);
-  //desiredCapabilities.set
-
- }
-
-		   
-		 
-		    
-		 
-		  
-		  //"appium:automationName": "UiAutomator2",
-		  
-		
-	 
-	
-	
-	@Test
-	public void AppiumTest() throws MalformedURLException {
-		//UiAutomator2Options options=new UiAutomator2Options(); 
-		//options.setDeviceName("Android Device");
-		//options.setApp("//Users//bitbyte//eclipse-workspace//AppiumAutomation//src//test//java//resources//ApiDemos-debug.apk");
-		//Actual Automation
-		//xpath,id,accessibilityid,classname,androiduiautomater
-		
-		System.out.println("HelloTest");
-		
-		
-		
-		
-		
-		
-		//AndroidDriver driver=new AndroidDriver(new URL("http://127.0.0.1:4723"),options);
-		//driver.quit();
-
-		//System.out.println("firstappium TestHelloTest");
-		//System.out.println("firstappium TestHelloTest1");
-		
-
-}
-	@AfterSuite
-    public void tearDown() {
-        //driver.close();
-        driver.quit();
-    }
-	}
-
+//  DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
+//  desiredCapabilities.setCapability("platformName", "iOS");
+//  desiredCapabilities.setCapability("platformVersion", "14.5");
+//  desiredCapabilities.setCapability("deviceName", "iPhone 12 Pro");
+//  desiredCapabilities.setCapability("automationName","XCUITest");
+//  //desiredCapabilities.setCapability("appPackage", "");
+//  desiredCapabilities.setCapability("app", "/Users/bitbyte/Desktop/BizGrab.app");
+//
+//  URL url = new URL("http://127.0.0.1:4723/wd/hub");
+//
+//  //driver = new AppiumDriver(url, desiredCapabilities);
+//  //AndroidDriver androidDriver = new AndroidDriver(url, desiredCapabilities);
+//  driver = new AppiumDriver(url, desiredCapabilities);
+//  //desiredCapabilities.set
+//
+// }
+//
+//		   
+//		 
+//		    
+//		 
+//		  
+//		  //"appium:automationName": "UiAutomator2",
+//		  
+//		
+//	 
+//	
+//	
+//	@Test
+//	public void AppiumTest() throws MalformedURLException {
+//		//UiAutomator2Options options=new UiAutomator2Options(); 
+//		//options.setDeviceName("Android Device");
+//		//options.setApp("//Users//bitbyte//eclipse-workspace//AppiumAutomation//src//test//java//resources//ApiDemos-debug.apk");
+//		//Actual Automation
+//		//xpath,id,accessibilityid,classname,androiduiautomater
+//		
+//		System.out.println("HelloTest");
+//		
+//		
+//		
+//		
+//		
+//		
+//		//AndroidDriver driver=new AndroidDriver(new URL("http://127.0.0.1:4723"),options);
+//		//driver.quit();
+//
+//		//System.out.println("firstappium TestHelloTest");
+//		//System.out.println("firstappium TestHelloTest1");
+//		
+//
+//}
+//	@AfterSuite
+//    public void tearDown() {
+//        //driver.close();
+//        driver.quit();
+//    }
+//	}
+//
