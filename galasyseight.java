@@ -9,13 +9,6 @@ import java.util.UUID;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.io.FileHandler;
-import org.openqa.selenium.remote.CapabilityType;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
-import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -23,9 +16,7 @@ import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
 
-//adding some comment for git hub
-public class appiumbasics {
-	//WebDriver driver;
+public class galasyseight {
 	AndroidDriver driver;
 	@BeforeClass
 	 public void setUp() throws Exception {
@@ -91,8 +82,8 @@ public class appiumbasics {
   
     driver.findElement(By.xpath("//*[@text='Next']")).click();
     Thread.sleep(3000);
-    driver.findElement(By.className("android.view.ViewGroup")).click();
-    Thread.sleep(3000);
+    driver.findElement(By.xpath("//*[@text='Aberdeen Paper Sandbox']")).click();
+    Thread.sleep(9000);
     driver.findElement(By.xpath("//*[@text='Password']")).sendKeys("Password");
     Thread.sleep(3000);
     driver.findElement(By.xpath("//*[@text='Login']")).click();
@@ -161,9 +152,9 @@ public class appiumbasics {
 //   UiAutomator2Options option15 = new UiAutomator2Options();
 //   option15.setNativeWebScreenshot(true);
 //   screenshot("/Users/bitbyte/Desktop/screenshot/6");
-
+//
 //   
-  //driver.navigate().back() ;
+//   driver.navigate().back() ;
    
    
    //driver.findElement(AppiumBy.className("android.view.ViewGroup")).click();
@@ -191,11 +182,11 @@ public class appiumbasics {
 // driver.findElement(By.xpath("//*[@text='While using the app']")).click();  //tab
 // Thread.sleep(3000);
 //driver.findElement(By.xpath("//*[@text='While using the app']")).click();// tab
-////
-// driver.findElement(By.xpath("//*[@text='Allow']")).click();
-// Thread.sleep(3000);
-// driver.findElement(By.xpath("//*[@text='Allow']")).click();
-//Thread.sleep(3000);
+//
+ driver.findElement(By.xpath("//*[@text='While using the app']")).click();
+ Thread.sleep(3000);
+ driver.findElement(By.xpath("//*[@text='While using the app']")).click();
+Thread.sleep(3000);
 UiAutomator2Options option16 = new UiAutomator2Options();
 option16.setNativeWebScreenshot(true);
 screenshot("/Users/bitbyte/Desktop/screenshot/6");
@@ -252,9 +243,5 @@ screenshot("/Users/bitbyte/Desktop/screenshot/6");
 		//System.out.println("firstappium TestHelloTest1");
 		
 	}
-	
-	
-	
-	
 
 }
