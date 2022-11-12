@@ -82,8 +82,8 @@ public class galasyseight {
   
     driver.findElement(By.xpath("//*[@text='Next']")).click();
     Thread.sleep(3000);
-    driver.findElement(By.xpath("//*[@text='Aberdeen Paper Sandbox']")).click();
-    Thread.sleep(9000);
+    driver.findElement(By.className("android.view.ViewGroup")).click();
+    Thread.sleep(3000);
     driver.findElement(By.xpath("//*[@text='Password']")).sendKeys("Password");
     Thread.sleep(3000);
     driver.findElement(By.xpath("//*[@text='Login']")).click();
@@ -143,18 +143,18 @@ public class galasyseight {
 //   Thread.sleep(3000);
    driver.navigate().back() ;
   
-//   driver.findElement(By.className("android.widget.ImageView")).click();
-//   Thread.sleep(3000);
-//   driver.findElement(By.xpath("//*[@text='Allow']")).click();
-//   Thread.sleep(3000);
-//   driver.findElement(By.xpath("//*[@text='Allow']")).click();
-//   Thread.sleep(3000);
-//   UiAutomator2Options option15 = new UiAutomator2Options();
-//   option15.setNativeWebScreenshot(true);
-//   screenshot("/Users/bitbyte/Desktop/screenshot/6");
-//
-//   
-//   driver.navigate().back() ;
+   driver.findElement(By.className("android.widget.ImageView")).click();
+   Thread.sleep(3000);
+   driver.findElement(By.xpath("//*[@text='While using the app']")).click();
+   Thread.sleep(5000);
+   driver.findElement(By.xpath("//*[@text='While using the app']")).click();
+   Thread.sleep(3000);
+   UiAutomator2Options option15 = new UiAutomator2Options();
+   option15.setNativeWebScreenshot(true);
+   screenshot("/Users/bitbyte/Desktop/screenshot/6");
+
+   
+  driver.navigate().back() ;
    
    
    //driver.findElement(AppiumBy.className("android.view.ViewGroup")).click();
@@ -182,10 +182,10 @@ public class galasyseight {
 // driver.findElement(By.xpath("//*[@text='While using the app']")).click();  //tab
 // Thread.sleep(3000);
 //driver.findElement(By.xpath("//*[@text='While using the app']")).click();// tab
-//
- driver.findElement(By.xpath("//*[@text='While using the app']")).click();
- Thread.sleep(3000);
- driver.findElement(By.xpath("//*[@text='While using the app']")).click();
+////
+ driver.findElement(By.xpath("//*[@text='Allow']")).click();
+ Thread.sleep(5000);
+ driver.findElement(By.xpath("//*[@text='Allow']")).click();
 Thread.sleep(3000);
 UiAutomator2Options option16 = new UiAutomator2Options();
 option16.setNativeWebScreenshot(true);

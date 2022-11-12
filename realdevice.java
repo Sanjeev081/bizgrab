@@ -16,7 +16,7 @@ import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
 
-public class galaxys10e {
+public class realdevice {
 	AndroidDriver driver;
 	@BeforeClass
 	 public void setUp() throws Exception {
@@ -82,8 +82,8 @@ public class galaxys10e {
   
     driver.findElement(By.xpath("//*[@text='Next']")).click();
     Thread.sleep(3000);
-    driver.findElement(By.xpath("//*[@text='Aberdeen Paper Sandbox']")).click();
-    Thread.sleep(9000);
+    driver.findElement(By.className("android.view.ViewGroup")).click();
+    Thread.sleep(3000);
     driver.findElement(By.xpath("//*[@text='Password']")).sendKeys("Password");
     Thread.sleep(3000);
     driver.findElement(By.xpath("//*[@text='Login']")).click();
@@ -145,16 +145,16 @@ public class galaxys10e {
   
    driver.findElement(By.className("android.widget.ImageView")).click();
    Thread.sleep(3000);
-   driver.findElement(By.xpath("//*[@text='While using the app']")).click();
+   driver.findElement(By.xpath("//*[@text='Allow']")).click();
    Thread.sleep(3000);
-   driver.findElement(By.xpath("//*[@text='While using the app']")).click();
+   driver.findElement(By.xpath("//*[@text='Allow']")).click();
    Thread.sleep(3000);
    UiAutomator2Options option15 = new UiAutomator2Options();
    option15.setNativeWebScreenshot(true);
    screenshot("/Users/bitbyte/Desktop/screenshot/6");
 
    
-   driver.navigate().back() ;
+  driver.navigate().back() ;
    
    
    //driver.findElement(AppiumBy.className("android.view.ViewGroup")).click();
@@ -182,10 +182,10 @@ public class galaxys10e {
 // driver.findElement(By.xpath("//*[@text='While using the app']")).click();  //tab
 // Thread.sleep(3000);
 //driver.findElement(By.xpath("//*[@text='While using the app']")).click();// tab
-//
-// driver.findElement(By.xpath("//*[@text='Allow']")).click();
-// Thread.sleep(3000);
-// driver.findElement(By.xpath("//*[@text='Allow']")).click();
+////
+ driver.findElement(By.xpath("//*[@text='Allow']")).click();
+ Thread.sleep(3000);
+ driver.findElement(By.xpath("//*[@text='Allow']")).click();
 Thread.sleep(3000);
 UiAutomator2Options option16 = new UiAutomator2Options();
 option16.setNativeWebScreenshot(true);
@@ -243,7 +243,5 @@ screenshot("/Users/bitbyte/Desktop/screenshot/6");
 		//System.out.println("firstappium TestHelloTest1");
 		
 	}
-	
-	
 
 }

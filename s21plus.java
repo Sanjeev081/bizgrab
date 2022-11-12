@@ -143,18 +143,18 @@ public class s21plus {
 //   Thread.sleep(3000);
    driver.navigate().back() ;
   
-//   driver.findElement(By.className("android.widget.ImageView")).click();
-//   Thread.sleep(3000);
-//   driver.findElement(By.xpath("//*[@text='Allow']")).click();
-//   Thread.sleep(3000);
-//   driver.findElement(By.xpath("//*[@text='Allow']")).click();
-//   Thread.sleep(3000);
-//   UiAutomator2Options option15 = new UiAutomator2Options();
-//   option15.setNativeWebScreenshot(true);
-//   screenshot("/Users/bitbyte/Desktop/screenshot/6");
-//
-//   
-//   driver.navigate().back() ;
+   driver.findElement(By.className("android.widget.ImageView")).click();
+   Thread.sleep(3000);
+   driver.findElement(By.xpath("//*[@text='While using the app']")).click();
+   Thread.sleep(3000);
+   driver.findElement(By.xpath("//*[@text='While using the app']")).click();
+   Thread.sleep(3000);
+   UiAutomator2Options option15 = new UiAutomator2Options();
+   option15.setNativeWebScreenshot(true);
+   screenshot("/Users/bitbyte/Desktop/screenshot/6");
+
+   
+   driver.navigate().back() ;
    
    
    //driver.findElement(AppiumBy.className("android.view.ViewGroup")).click();
