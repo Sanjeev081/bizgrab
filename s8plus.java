@@ -187,9 +187,53 @@ public class s8plus {
  Thread.sleep(3000);
  driver.findElement(By.xpath("//*[@text='While using the app']")).click();
 Thread.sleep(3000);
+driver.navigate().back();
+Thread.sleep(3000);
+driver.navigate().back();
+Thread.sleep(3000);
+driver.navigate().back();
+driver.findElement(By.xpath("//*[@text='Scan Off']")).click();
+Thread.sleep(2000);
+UiAutomator2Options option20 = new UiAutomator2Options();
+option20.setNativeWebScreenshot(true);
+screenshot("/Users/bitbyte/Desktop/screenshot/10");
+
+//driver.findElement(By.xpath("//*[@text='Search']")).sendKeys("ref20964");
+//driver.findElement(By.xpath("//*[@text='SUMMARY']")).click();
+//
+driver.findElement(By.className("android.widget.ImageView")).click();
+Thread.sleep(3000);
+UiAutomator2Options option21 = new UiAutomator2Options();
+option21.setNativeWebScreenshot(true);
+screenshot("/Users/bitbyte/Desktop/screenshot/11");
+driver.navigate().back();
+
+driver.findElement(By.xpath("//*[@text='Search']")).sendKeys("ref20964");
+//driver.findElement(By.xpath("//*[@text='PENDING DELIVERY']")).click();
+driver.findElement(By.xpath("//*[@text='PARTIALLY SCANNED ON']")).click();
+Thread.sleep(3000);
+UiAutomator2Options option22 = new UiAutomator2Options();
+option22.setNativeWebScreenshot(true);
+screenshot("/Users/bitbyte/Desktop/screenshot/12");
+
+driver.findElement(By.xpath("//*[@text='PARTIALLY SCANNED ON']")).click();
+//driver.findElement(By.xpath("//*[@text='PENDING DELIVERY']")).click();
+Thread.sleep(3000);
+UiAutomator2Options option23 = new UiAutomator2Options();
+option23.setNativeWebScreenshot(true);
+screenshot("/Users/bitbyte/Desktop/screenshot/13");
+Thread.sleep(3000);
+//driver.findElement(By.xpath("//*[@text='Allow']")).click();
+//Thread.sleep(3000);
+//driver.findElement(By.xpath("//*[@text='Allow']")).click();
+//Thread.sleep(3000);
+driver.findElement(By.className("android.widget.ImageView")).click();
+
+
 UiAutomator2Options option16 = new UiAutomator2Options();
 option16.setNativeWebScreenshot(true);
 screenshot("/Users/bitbyte/Desktop/screenshot/6");
+
 
 // File file7  = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 // FileUtils.copyFile(file7, new File("InvScreenshot.jpg"));
@@ -243,6 +287,5 @@ screenshot("/Users/bitbyte/Desktop/screenshot/6");
 		//System.out.println("firstappium TestHelloTest1");
 		
 	}
-
 
 }

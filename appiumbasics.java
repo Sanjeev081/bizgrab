@@ -27,6 +27,7 @@ import io.appium.java_client.android.options.UiAutomator2Options;
 public class appiumbasics {
 	//WebDriver driver;
 	AndroidDriver driver;
+	
 	@BeforeClass
 	 public void setUp() throws Exception {
 	 
@@ -67,6 +68,7 @@ public class appiumbasics {
 // 
 
 	  driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), options);
+	  
 	  //Thread.sleep(3000);
 //   
 //  File file  = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
@@ -231,6 +233,7 @@ screenshot("/Users/bitbyte/Desktop/screenshot/6");
 	    FileUtils.copyFile(srcFile,targetFile);
 	}
 	
+	
 		   
 		 
 		    
@@ -252,6 +255,10 @@ screenshot("/Users/bitbyte/Desktop/screenshot/6");
 		
 		System.out.println("HelloTest");
 		
+		driver.quit();
+		
+		
+		
 		
 		
 		
@@ -262,6 +269,7 @@ screenshot("/Users/bitbyte/Desktop/screenshot/6");
 
 		//System.out.println("firstappium TestHelloTest");
 		//System.out.println("firstappium TestHelloTest1");
+		
 		
 	}
 	

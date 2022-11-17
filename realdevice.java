@@ -36,7 +36,7 @@ public class realdevice {
 //      Thi is for the Tab
 	 UiAutomator2Options options=new UiAutomator2Options();
 	 options.setDeviceName("Sanjeeviphone");
-	 options.setApp("/Users/bitbyte/Desktop/13.apk");
+	 options.setApp("/Users/bitbyte/Desktop/app-release .apk");
 	 options.setAppActivity("com.bizgrab.MainActivity");
 	 
 	 
@@ -130,7 +130,7 @@ public class realdevice {
 // // driver.findElement(By.xpath("//*[@text='Search']")).clear();
 //  //driver.findElement(By.xpath("//*[@text='Search']")).sendKeys("ref20964");
 //  driver.findElement(By.xpath("//*[text='PENDING DELIVERY']")).click();
-   driver.findElement(By.xpath("//*[@text='Search']")).sendKeys("ref20911");
+   driver.findElement(By.xpath("//*[@text='Search']")).sendKeys("ref20964");
    driver.findElement(By.xpath("//*[@text='SUMMARY']")).click();
    Thread.sleep(3000);
    UiAutomator2Options option13 = new UiAutomator2Options();
@@ -176,17 +176,60 @@ public class realdevice {
    UiAutomator2Options option17 = new UiAutomator2Options();
    option17.setNativeWebScreenshot(true);
    screenshot("/Users/bitbyte/Desktop/screenshot/6");
- driver.findElement(By.xpath("//*[@text='PENDING DELIVERY']")).click();
+ driver.findElement(By.xpath("//*[@text='PARTIALLY SCANNED ON']")).click();
  Thread.sleep(3000);
 // 
 // driver.findElement(By.xpath("//*[@text='While using the app']")).click();  //tab
 // Thread.sleep(3000);
 //driver.findElement(By.xpath("//*[@text='While using the app']")).click();// tab
 ////
- driver.findElement(By.xpath("//*[@text='Allow']")).click();
- Thread.sleep(3000);
- driver.findElement(By.xpath("//*[@text='Allow']")).click();
+// driver.findElement(By.xpath("//*[@text='Allow']")).click();
+// Thread.sleep(3000);
+// driver.findElement(By.xpath("//*[@text='Allow']")).click();
+//Thread.sleep(3000);
+driver.navigate().back();
 Thread.sleep(3000);
+driver.navigate().back();
+Thread.sleep(3000);
+driver.navigate().back();
+driver.findElement(By.xpath("//*[@text='Scan Off']")).click();
+Thread.sleep(2000);
+UiAutomator2Options option20 = new UiAutomator2Options();
+option20.setNativeWebScreenshot(true);
+screenshot("/Users/bitbyte/Desktop/screenshot/10");
+
+//driver.findElement(By.xpath("//*[@text='Search']")).sendKeys("ref20964");
+//driver.findElement(By.xpath("//*[@text='SUMMARY']")).click();
+//
+driver.findElement(By.className("android.widget.ImageView")).click();
+Thread.sleep(3000);
+UiAutomator2Options option21 = new UiAutomator2Options();
+option21.setNativeWebScreenshot(true);
+screenshot("/Users/bitbyte/Desktop/screenshot/11");
+driver.navigate().back();
+
+driver.findElement(By.xpath("//*[@text='Search']")).sendKeys("ref20964");
+//driver.findElement(By.xpath("//*[@text='PENDING DELIVERY']")).click();
+driver.findElement(By.xpath("//*[@text='PARTIALLY SCANNED ON']")).click();
+Thread.sleep(3000);
+UiAutomator2Options option22 = new UiAutomator2Options();
+option22.setNativeWebScreenshot(true);
+screenshot("/Users/bitbyte/Desktop/screenshot/12");
+
+driver.findElement(By.xpath("//*[@text='PARTIALLY SCANNED ON']")).click();
+//driver.findElement(By.xpath("//*[@text='PENDING DELIVERY']")).click();
+Thread.sleep(3000);
+UiAutomator2Options option23 = new UiAutomator2Options();
+option23.setNativeWebScreenshot(true);
+screenshot("/Users/bitbyte/Desktop/screenshot/13");
+Thread.sleep(3000);
+//driver.findElement(By.xpath("//*[@text='Allow']")).click();
+//Thread.sleep(3000);
+//driver.findElement(By.xpath("//*[@text='Allow']")).click();
+//Thread.sleep(3000);
+
+
+
 UiAutomator2Options option16 = new UiAutomator2Options();
 option16.setNativeWebScreenshot(true);
 screenshot("/Users/bitbyte/Desktop/screenshot/6");
@@ -243,5 +286,6 @@ screenshot("/Users/bitbyte/Desktop/screenshot/6");
 		//System.out.println("firstappium TestHelloTest1");
 		
 	}
+	
 
 }
