@@ -63,6 +63,11 @@ public class realdevice {
 //  File file  = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 //  FileUtils.copyFile(file, new File("Screenshot.jpg"));
   Thread.sleep(5000);
+//  UiAutomator2Options option17 = new UiAutomator2Options();
+//  option17.setNativeWebScreenshot(true);
+//  screenshot("/Users/bitbyte/Desktop/screenshot/15");
+
+  
 //  driver.findElement(AppiumBy.accessibilityId("Preference")).click();
 //  
 // driver.findElement(By.xpath("//android.widget.TextView[@content-desc=\"3. Preference dependencies\"]")).click();
@@ -76,18 +81,36 @@ public class realdevice {
 //  driver.findElement(By.id("android:id/edit")).sendKeys("Testing");
 //  driver.findElement(By.id("android:id/button1")).click();
     driver.findElement(AppiumBy.className("android.widget.EditText")).sendKeys("sanjeevk@bitbyteitservices.com");
+  UiAutomator2Options option18 = new UiAutomator2Options();
+  option18.setNativeWebScreenshot(true);
+  screenshot("/Users/bitbyte/Desktop/screenshot/15");
+    
     Thread.sleep(3000);
+    UiAutomator2Options option19 = new UiAutomator2Options();
+    option19.setNativeWebScreenshot(true);
+    screenshot("/Users/bitbyte/Desktop/screenshot/16");
+      
    
     //driver.findElement(By.xpath("ewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.TextView")).click();
   
     driver.findElement(By.xpath("//*[@text='Next']")).click();
     Thread.sleep(3000);
-    driver.findElement(By.className("android.view.ViewGroup")).click();
+    driver.findElement(By.xpath("//*[@text='Aberdeen Paper Sandbox']")).click();//galaxy s9pus
+    //driver.findElement(By.className("android.view.ViewGroup")).click(); for real device
     Thread.sleep(3000);
     driver.findElement(By.xpath("//*[@text='Password']")).sendKeys("Password");
     Thread.sleep(3000);
+    UiAutomator2Options option25 = new UiAutomator2Options();
+    option25.setNativeWebScreenshot(true);
+    screenshot("/Users/bitbyte/Desktop/screenshot/1");
+    
+    
+    
+    
     driver.findElement(By.xpath("//*[@text='Login']")).click();
+    
     Thread.sleep(30000);
+    
 //  File file  = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 //   FileUtils.copyFile(file, new File("homeScreenshot.png"));
 //   Thread.sleep(4000);
@@ -194,8 +217,8 @@ Thread.sleep(3000);
 driver.navigate().back();
 driver.findElement(By.xpath("//*[@text='Scan Off']")).click();
 Thread.sleep(2000);
-UiAutomator2Options option20 = new UiAutomator2Options();
-option20.setNativeWebScreenshot(true);
+UiAutomator2Options option22 = new UiAutomator2Options();
+option22.setNativeWebScreenshot(true);
 screenshot("/Users/bitbyte/Desktop/screenshot/10");
 
 //driver.findElement(By.xpath("//*[@text='Search']")).sendKeys("ref20964");
@@ -212,8 +235,8 @@ driver.findElement(By.xpath("//*[@text='Search']")).sendKeys("ref20964");
 //driver.findElement(By.xpath("//*[@text='PENDING DELIVERY']")).click();
 driver.findElement(By.xpath("//*[@text='PARTIALLY SCANNED ON']")).click();
 Thread.sleep(3000);
-UiAutomator2Options option22 = new UiAutomator2Options();
-option22.setNativeWebScreenshot(true);
+UiAutomator2Options option24 = new UiAutomator2Options();
+option24.setNativeWebScreenshot(true);
 screenshot("/Users/bitbyte/Desktop/screenshot/12");
 
 driver.findElement(By.xpath("//*[@text='PARTIALLY SCANNED ON']")).click();
@@ -227,12 +250,12 @@ Thread.sleep(3000);
 //Thread.sleep(3000);
 //driver.findElement(By.xpath("//*[@text='Allow']")).click();
 //Thread.sleep(3000);
-
+//
 
 
 UiAutomator2Options option16 = new UiAutomator2Options();
 option16.setNativeWebScreenshot(true);
-screenshot("/Users/bitbyte/Desktop/screenshot/6");
+screenshot("/Users/bitbyte/Desktop/screenshot/14");
 
 // File file7  = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 // FileUtils.copyFile(file7, new File("InvScreenshot.jpg"));
